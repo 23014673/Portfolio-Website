@@ -1,0 +1,75 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cfd2d8;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Heading styling */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Results container */
+#results {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Result label and value styling */
+.result {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.result label {
+    font-weight: bold;
+    color: #34495e;
+    margin-right: 10px;
+}
+
+.result span {
+    font-weight: normal;
+    color: #2c3e50;
+}
+
+/* Style for missing values (N/A) */
+.result .na {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+/* Styling for the submit button */
+button, input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2980b9;
+}

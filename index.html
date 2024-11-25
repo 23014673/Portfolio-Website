@@ -1,0 +1,249 @@
+<!-- Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 11/17/2024
+Assignment: Final Project
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Project</title>
+        <link href="js/jquery-ui.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="shortcut icon" href="images/logo.png">
+    </head>
+<body>
+
+    <div class="gradient-background"></div>
+
+    <h1>Favorite Trips Of 2023</h1>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#topic1">Global Citizen Live</a></li>
+            <li><a href="#topic2">Acropolis Of Athens</a></li>
+            <li><a href="#topic3">Lourve Museum</a></li>
+            <li><a href="#topic4">Vacation Preferences</a></li>
+            <li><a href="#topic5">Your Favorite Trips</a></li>
+        </ul>
+
+        <div id="topic1">
+            <h2>Global Citizen Live 2023 | New York</h2>
+
+            <div class="flexbox-container">
+                <div class="image-content">
+                    <img src="images/image2.png" alt="Global Citizen Live Image 1" style="width: 350px; height: 450px;">
+                </div>
+
+                <div class="text-content">
+                    <p> My favorite thing of the year that I got to do was when I last minute got to go to Global Citizen Live in NYC Times Square. One of my friends goes to school at NYU and won 
+                        2 VIP tickets! She knows I am a huge fan of BTS (one of the members headlined), so she offered me the second ticket. All I had to do was get a cheap flight and I was there right away!</p>
+                    <br>
+                    <p> "Global Citizen is a movement on a mission to end extreme poverty with the 2023 Global Citizen Festival campaign taking aim at the major issues driving extreme poverty, 
+                        including the climate crisis, gender inequity, food insecurity, and more.In 2021, BTS performed from Seoul as part of Global Citizen Live which featured 65 artists performing 
+                        across 6 continents to call for urgent action to defeat poverty and protect the planet. At the 2023 Global Citizen Festival, Jung Kook performed solo on the Great Lawn of 
+                        Central Park! He joined Global Citizen to call for action to help end extreme poverty."</p>
+                </div>
+                <div class="image-content2">
+                    <img src="images/image1.png" alt="Global Citizen Live Image 2" style="width: 350px; height: 450px;">
+                </div>  
+            </div>
+        </div>
+
+
+        <div id="topic2">
+            <h2>Athens, Greece | Acropolis</h2>
+
+            <div class="flexbox-container">
+                <div class="text-content">
+                    <p> My favorite museum of the year that I went to was the Acropolis at the Parthenon. Seeing pieces of art that are older than some civilizations was eye opening. The art piere 
+                        I chose to show is called the 'Caryatids: The Daughters of Athens'. Sadly there is one sister missing, as it was taken by the British and never given back. The lost
+                        sister now sits alone in the Biritsh Museaum with thousands of other stolen art pieces. The Acropolis Museum purposely leaves a space for her to return.</p>
+                    <br>
+                    <p> "The Acropolis of Athens and its monuments are universal symbols of the classical spirit and civilization and form the greatest architectural and artistic complex 
+                        bequeathed by Greek Antiquity to the world." </p>
+                </div>
+
+                <div class="image-content">
+                    <img src="images/image5.png" alt="Global Citizen Live Image 2" style="width: 600px; height: 455px;">
+                </div>  
+            </div>
+        </div>
+
+
+        <div id="topic3">
+            <h2>Paris, France | Lourve</h2>
+
+            <div class="flexbox-container">
+                <div class="image-content">
+                    <img src="images/image3.png" alt="Global Citizen Live Image 1" style="width: 400px; height: 455px;">
+                </div>
+
+                <div class="text-content">
+                    <p> My favorite city of the year was Paris, France. I was only there for 3 days but I got to go to a lot of places like Disney Paris, most of the famous monuments, and the Lourve! I didn't take 
+                        a ton of photos, as I was trying to just "live in the moment" but these two art pieces are the most famous.</p>
+                    <p>Mona Lisa - "The Mona Lisa’s special allure has brought her all sorts of unwelcome attention too, with incidents that have only added to her celebrity status. In 1911, for example, an Italian 
+                        museum worker stole the painting ‘to return it to its homeland’, sparking a furore in the press!"</p>
+                    <p>Liberty Leading the People - "Delacroix deliberately used the colours blue, white and red in combination several times in his painting: the French flag, a symbol of the 1789 Revolution then of the Empire, was banned 
+                        when the Monarchy returned to power between 1815 and 1830. This famous allegorical/historical painting, often referenced in art and advertising, stands as a symbol of liberty and freedom fights."</p>
+                </div>
+
+                <div class="image-content2">
+                    <img src="images/image4.png" alt="Global Citizen Live Image 2" style="width: 400px; height: 455px;">
+                </div>  
+            </div>
+        </div>
+
+
+        <div id="topic4">
+            <h2>Vacation Preference Form</h2>
+        
+            <form action="result.html" method="get" name="reservation_form" id="reservation_form">
+            
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" name="name" id="name">
+                        <span id="nameError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="text" name="email" id="email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="phone">Phone <span>*</span></label>
+                        <input type="text" name="phone" id="phone" placeholder="000-000-0000">
+                        <span id="phoneError" class="error"></span>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>General Information</legend>
+                    <div>
+                        <label for="arrival_date">Arrival Date <span>*</span></label>
+                        <br>
+                        <input type="date" name="arrival_date" id="arrival_date" autofocus>
+                        <span id="arrivalDateError" class="error"></span>
+                    </div>
+
+                    <div>
+                        <br>
+                        <label for="departure_date">Departure Date <span>*</span></label>
+                        <br>
+                        <input type="date" name="departure_date" id="departure_date">
+                        <span id="departureDateError" class="error"></span>
+                    </div>
+                    
+                    <div>
+                        <br>
+                        <label>Adults</label>
+                        <select name="adults" id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>                                                
+                        </select>
+                    </div>
+        
+                    <div>
+                        <label>Children</label>
+                        <select name="children" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>                                                
+                        </select>
+                    </div>      
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div>
+                        <label>Flight Type </label>
+                        <input type="radio" name="flight_type" id="standard" class="left" value="Direct" checked>Direct
+                        <br>          
+                        <input type="radio" name="flight_type" id="business" class="left" value="Layover">Layover
+                    </div>
+                    
+                    <div>
+                        <br>
+                        <label>Seat Type </label>
+                        <input type="radio" name="seat_type" id="economy" class="left" value="Economy" checked>Economy
+                        <input type="radio" name="seat_type" id="comfort" class="left" value="Comfort">Comfort
+                        <input type="radio" name="seat_type" id="firstClass" class="left last" value="First Class">First Class
+                    </div>
+        
+                    <div>
+                        <br>
+                        <input type="checkbox" name="animal" id="animal">Pets
+                    </div>
+                </fieldset> 
+                
+                <fieldset>
+                    <div>
+                        <input type="submit" id="submit" value="Submit Request">
+                    </div>
+                </fieldset>     
+            </form>
+        </div>  
+        
+
+        <div id="topic5">
+            <h2>Save Your Favorite Trip</h2>
+            <div>
+                <label for="trip"></label>
+                <input type="text" id="trip" placeholder="Tokyo, Japan '22">
+            </div>
+            <div>
+                <button id="saveTrip">Save Trip</button>
+                <button id="loadTrip">Load Trip</button>
+            </div>
+            <div id="savedTripBox">
+                <span id="savedTripMessage"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="button-container">
+        <button id="openSourcesDialog"> Sources </button>
+    </div>
+    
+
+    <div id="sourcesDialog" title="Sources">
+        <p>Photo credits: All images are mine.</p>
+        <cite>
+            <a href="https://www.globalcitizen.org/en/festival/nyc/2023/" target="_blank">Global Citizen Live</a>
+        </cite>
+        <br>
+        <cite>
+            <a href="https://whc.unesco.org/en/list/404/" target="_blank">UNESCO | Acropolis</a>
+        </cite>
+        <br>
+        <cite>
+            <a href="https://www.louvre.fr/en/exhibitions-and-events/exhibitions" target="_blank">Louvre Exhibitions</a>
+        </cite>
+    </div>
+    
+
+    <div id="welcomeModal">
+        <p>Welcome! This site will take you through my favorite trips from Summer 2023.</p>
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+            <iframe src="https://giphy.com/embed/3oFyD9bC0N65oZv53q" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/local_storage.js"></script>
+</body>
+</html>

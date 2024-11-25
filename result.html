@@ -1,0 +1,64 @@
+<!-- Author: Hannah Bauer
+Course: CGS2829.0M1
+Date: 12/1/2024
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Results</title>
+    <link href="css/results.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Vacation Preferences</h1>
+    <div id="results"></div>
+
+    <script>
+        function getQueryParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            const params = {};
+            
+            urlParams.forEach((value, key) => {
+                params[key] = value;
+            });
+            
+            return params;
+        }
+
+        function displayResults() {
+            const params = getQueryParams();
+            
+            const resultsDiv = document.getElementById("results");
+
+            resultsDiv.innerHTML = `
+                <div class="result"><label>Name</label> ${params.name || "N/A"}</div>
+                
+                <div class="result"><label>Email</label> ${params.email || "N/A"}</div>
+                
+                <div class="result"><label>Phone</label> ${params.phone || "N/A"}</div>
+                
+                <div class="result"><label>Arrival Date</label> ${params.arrival_date || "N/A"}</div>
+                
+                <div class="result"><label>Departure Date</label> ${params.departure_date || "N/A"}</div>
+                
+                <div class="result"><label>Adults</label> ${params.adults || "N/A"}</div>
+                
+                <div class="result"><label>Children</label> ${params.children || "N/A"}</div>
+                
+                <div class="result"><label>Flight Type</label> ${params.flight_type || "N/A"}</div>
+
+                <div class="result"><label>Seat Type</label> ${params.seat_type || "N/A"}</div>
+
+                <div class="result"><label>Pets</label> ${params.animal ? "Yes" : "No"}</div>
+            `;
+        }
+
+        window.onload = displayResults;
+    </script>
+</body>
+</html>
